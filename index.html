@@ -3,14 +3,61 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
 </head>
 
 <body>
   <div class="first">
-    <button class="btn success" id="do">記帳</button> <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <button class="btn success" id="do" data-toggle="modal" data-target="#accounting">記帳</button> <br></br>
     <button class="btn info" id="did">近10筆出入</button> <br></br>
     <button class="btn warning" id="see">紀錄查詢</button>
+    <!-- Trigger the modal with a button -->
+    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="accounting">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="studentDetail">支出/收入</h4>
+          </div>
+          <div class="modal-body">
+            日期：<input type="date" id="date"></input><br></br>
+            名稱：<input type="text" id="EvenT"></input><br></br>
+            金額：<input type="text" id="ammount"></input><br></br>
+            <p>類別：</p>
+            <input type="radio" name="occasion" value="dining" id="dining"> 食
+            <input type="radio" name="occasion" value="apparel" id="apparel"> 衣
+            <input type="radio" name="occasion" value="residential" id="residential"> 住 <br>
+            <input type="radio" name="occasion" value="transportation" id="transportation"> 行
+            <input type="radio" name="occasion" value="education" id="education"> 育
+            <input type="radio" name="occasion" value="entertainment" id="entertainment"> 樂 <br>
+            <!-- <input type="text" id="TypE"></input> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn info" data-dismiss="modal" id="spending">支出</button>
+            <button type="button" class="btn info" data-dismiss="modal" id="income">收入</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/jq.js"></script>
+  <script type="text/javascript" src="js/fdb-all.min.js"></script>
+  <script type="text/javascript" src="js/bs.js"></script>
+  <script type="text/javascript" src="js/acc.js"></script>
+</body>
 
 </html>
