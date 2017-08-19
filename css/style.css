@@ -90,3 +90,18 @@ body {
   height: 75px;
   font-size: 15px
 }
+
+#header {
+  text-align: center;
+  color: #FF69B4;
+  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 65px
+}
+#fixPadding{
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 20.5%;
+padding-right: 20.5%
+}
