@@ -4,8 +4,8 @@ var accountingCollection = db.collection('accounting');
 accountingCollection.load()
 
 
-function insertingString(color, date, EvenT, ammount, spendingType) {
-  return "<tr class="+color+"><td>" + date + "</td><td>" + EvenT + "</td><td>" + ammount + "</td><td>" + spendingType + "</td></tr>"
+function insertingString(color, date, EvenT, ammount, spendingType, type) {
+  return "<tr class="+color+"><td>" + date + "</td><td>" + EvenT + "</td><td>" + ammount + "</td><td>" + spendingType + "</td><td>"+type+"</td></tr>"
 }
 
 
@@ -29,6 +29,6 @@ setTimeout(function() {
     } else if (colornumber == 4) {
       var clr = "danger"
     }
-    $("#appendie").append(insertingString(clr, accountings[i].date, accountings[i].EvenT, accountings[i].ammount, accountings[i].spendingType))
+    $("#appendie").append(insertingString(clr, accountings[i].date, accountings[i].EvenT, accountings[i].ammount, accountings[i].spendingType, accountings[i].type))
   }
 }, 500)

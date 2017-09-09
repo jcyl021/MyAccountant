@@ -51,29 +51,67 @@ $("#submitsearch").click(function() {
     var transportationcost = 0;
     var educationcost = 0;
     var entertainmentcost = 0;
+    var dfactor = 0;
+    var afactor = 0;
+    var rfactor = 0;
+    var tfactor = 0;
+    var edufactor = 0;
+    var efactor = 0;
     for (i = 0; i < accountings.length; i++) {
       // console.log(accountings[i].spendingType)
       if (accountings[i].spendingType == "Entertainment") {
         entertainmentcost += accountings[i].ammount / 1;
         $("#ecd").text(entertainmentcost);
+        if (accountings[i].type == "Income") {
+         efactor+=accountings[i].ammount/1
+        } else {
+         efactor-=accountings[i].ammount/1
+        };
       } else if (accountings[i].spendingType == "Dining") {
         diningcost += accountings[i].ammount / 1;
         $("#dcd").text(diningcost);
+        if (accountings[i].type == "Income") {
+         dfactor+=accountings[i].ammount/1
+        } else {
+         dfactor-=accountings[i].ammount/1
+        };
       } else if (accountings[i].spendingType == "Apparel") {
         apparelcost += accountings[i].ammount / 1;
         $("#acd").text(apparelcost);
+        if (accountings[i].type == "Income") {
+         afactor+=accountings[i].ammount/1
+        } else {
+         afactor-=accountings[i].ammount/1
+        };
       } else if (accountings[i].spendingType == "Residential") {
         residentialcost += accountings[i].ammount / 1;
         $("#rcd").text(residentialcost);
+        if (accountings[i].type == "Income") {
+         rfactor+=accountings[i].ammount/1
+        } else {
+         rfactor-=accountings[i].ammount/1
+        };
       } else if (accountings[i].spendingType == "Transportation") {
         transportationcost += accountings[i].ammount / 1;
         $("#tcd").text(transportationcost);
+        if (accountings[i].type == "Income") {
+         tfactor+=accountings[i].ammount/1
+        } else {
+         tfactor-=accountings[i].ammount/1
+        };
       } else if (accountings[i].spendingType == "Education") {
         educationcost += accountings[i].ammount / 1;
         $("#educd").text(educationcost);
+        if (accountings[i].type == "Income") {
+         edufactor+=accountings[i].ammount/1
+        } else {
+         edufactor-=accountings[i].ammount/1
+        };
       };
     };
+    var ftotal = efactor + dfactor + afactor + rfactor + tfactor + edufactor;
     var total = entertainmentcost + diningcost + apparelcost + residentialcost + transportationcost + educationcost;
+
     var ecp = Math.round(entertainmentcost / total * 100) + "%";
     var dcp = Math.round(diningcost / total * 100) + "%";
     var acp = Math.round(apparelcost / total * 100) + "%";
@@ -86,7 +124,7 @@ $("#submitsearch").click(function() {
     $("#rcp").text(rcp);
     $("#tcp").text(tcp);
     $("#educp").text(educp);
-    $("#total").text(total)
+    $("#total").text(ftotal)
 
   } else if ($("#specific").prop("checked")) {
     var startTime = $("#startTime").val();

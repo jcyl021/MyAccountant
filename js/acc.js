@@ -34,8 +34,8 @@ $("#spending").click(function() {
       date: $("#date").val(),
       EvenT: $("#EvenT").val(),
       ammount: $("#ammount").val(),
-      spendingType: occasion
-      type: "spending"
+      spendingType: occasion,
+      type: "Spending"
     }
     $("#date").val("");
     $("#EvenT").val("");
@@ -59,7 +59,7 @@ $("#spending").click(function() {
 
 $("#income").click(function() {
 if ($("#date").val() != "" && $("#EvenT").val() != "" && $("#ammount").val() != "") {
-  var occasion
+  var occasion;
   if ($("#dining").prop("checked")) {
     occasion = "Dining"
   } else if ($("#apparel").prop("checked")) {
@@ -74,14 +74,15 @@ if ($("#date").val() != "" && $("#EvenT").val() != "" && $("#ammount").val() != 
     occasion = "Entertainment"
   } else {
     occasion = " "
-  }
+  };
+  console.log(occasion);
   var newIncome = {
     date: $("#date").val(),
     EvenT: $("#EvenT").val(),
     ammount: $("#ammount").val(),
-    spendingType: $("#TypE").val(),
-    type: "income"
-  }
+    spendingType: occasion,
+    type: "Income"
+  };
   $("#date").val("");
   $("#EvenT").val("");
   $("#ammount").val("");
@@ -99,5 +100,3 @@ if ($("#date").val() != "" && $("#EvenT").val() != "" && $("#ammount").val() != 
   alert("必須輸入記帳內容")
 }
 })
-})
-}

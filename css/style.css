@@ -89,7 +89,8 @@ body {
 #see {
   width: 60%;
   height: 75px;
-  font-size: 15px
+  font-size: 15px;
+  text-align: center;
 }
 
 #header {
@@ -105,7 +106,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 20.5%;
-  padding-right: 20.5%
+  padding-right: 20.5%;
 }
 
 #shheader {
@@ -162,13 +163,19 @@ body {
 #percentages {
   text-align: center;
 }
-.container{
+
+.container {
   width: 100%;
 }
+
 #historydisplay {
   font-size: 20px;
   font-family: 'Baloo Bhaijaan';
   color: #BC8F8F;
+  width: 90%;
+  margin: auto;
+}
+#appendie{
   width: 90%;
   margin: auto;
 }
