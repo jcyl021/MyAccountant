@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>history</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="shheader">紀錄查詢</h1>
+  <div id="search">
+    <br>
+    <input type="radio" name="searchtype" value="thismonth" id="thismonth" class="search"> 本月紀錄 <br><br>
+    <input type="radio" name="searchtype" value="specific" id="specific" class="search"> 指定期間<br><br> 從:
+    <input type="date" id="startTime"></input>
+    到:<input type="date" id="endTime"></input><br><br>
+    <button type="button" class="btn info" id="submitsearch">查詢</button><br><br>
+  </div>
+  <div class="container">
+    <table class="table table-hover" id="spendingTypes">
+      <thead>
+        <tr>
+          <th>類別</th>
+          <th>金額</th>
+          <th>比例</th>
+        </tr>
+      </thead>
+      <tbody id="percentages">
+        <tr>
+          <th>食</th>
+          <th id="dcd"></th>
+          <th id="dcp"></th>
+        </tr>
+        <tr>
+          <th>衣</th>
+          <th id="acd"></th>
+          <th id="acp"></th>
+        </tr>
+        <tr>
+          <th>住</th>
+          <th id="rcd"></th>
+          <th id="rcp"></th>
+        </tr>
+        <tr>
+          <th>行</th>
+          <th id="tcd"></th>
+          <th id="tcp"></th>
+        </tr>
+        <tr>
+          <th>育</th>
+          <th id="educd"></th>
+          <th id="educp"></th>
+        </tr>
+        <tr>
+          <th>樂</th>
+          <th id="ecd"></th>
+          <th id="ecp"></th>
+        </tr>
+        <tr>
+          <th>總額</th>
+          <th id="total"></th>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-hover" id="historytable">
+      <thead>
+        <tr>
+          <th>日期</th>
+          <th>名稱</th>
+          <th>金額</th>
+          <th>類別</th>
+        </tr>
+      </thead>
+      <tbody id="historydisplay">
+
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="js/jq.js"></script>
+  <script type="text/javascript" src="js/fdb-all.min.js"></script>
+  <script type="text/javascript" src="js/bs.js"></script>
+  <script type="text/javascript" src="js/searchhistory.js"></script>
+</body>
+
+</html>

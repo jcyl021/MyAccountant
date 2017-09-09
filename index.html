@@ -14,15 +14,13 @@
   <div class="first">
     <br></br>
     <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
     <button class="btn success" id="do" data-toggle="modal" data-target="#accounting">記帳</button> <br></br>
-    <a id="fixPadding"class="btn info" id="did" href="file:///Users/jaspercyliu/Desktop/MyAccountant/tenrecent.html">近10筆出入</a> <br></br>
-    <button class="btn warning" id="see">紀錄查詢</button>
-    <!-- Trigger the modal with a button -->
-    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
-
+    <a id="fixPadding" class="btn info" id="did" href="file:///Users/jaspercyliu/Desktop/MyAccountant/tenrecent.html">近10筆出入</a> <br></br>
+    <button class="btn success" id="see" onClick="window.location.href='searchhistory.html'">紀錄查詢</button>
+  </div>
+  <div>
+    <br><br><br>
+    <p id="diz">Okay, this is not "YOUR" own website, but considering most likely there's no one else on this with you, feel free to think of it as yours.</p>
     <div class="modal fade" tabindex="-1" role="dialog" id="accounting">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -53,7 +51,6 @@
     </div>
   </div>
 
-  </div>
 
   <script type="text/javascript" src="js/jq.js"></script>
   <script type="text/javascript" src="js/fdb-all.min.js"></script>

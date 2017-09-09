@@ -31,4 +31,4 @@ setTimeout(function() {
     }
     $("#appendie").append(insertingString(clr, accountings[i].date, accountings[i].EvenT, accountings[i].ammount, accountings[i].spendingType))
   }
-}, 1000)
+}, 500)

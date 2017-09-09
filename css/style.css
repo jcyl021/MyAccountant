@@ -1,5 +1,6 @@
 body {
   background-image: url("../images/background.jpg");
+  opacity: .95;
 }
 
 .btn {
@@ -14,25 +15,25 @@ body {
 }
 
 .success {
-  background-color: #4CAF50;
+  background-color: #4682B4;
 }
 
 
 /* Green */
 
 .success:hover {
-  background-color: #46a049;
+  background-color: #FFDAB9;
 }
 
 .info {
-  background-color: #2196F3;
+  background-color: #6495ED;
 }
 
 
 /* Blue */
 
 .info:hover {
-  background: #0b7dda;
+  background: #FFDAB9;
 }
 
 .warning {
@@ -76,7 +77,7 @@ body {
 #do {
   width: 60%;
   height: 75px;
-  font-size: 15px
+  font-size: 15px;
 }
 
 #did {
@@ -97,11 +98,77 @@ body {
   font-family: 'Saira Condensed', sans-serif;
   font-family: 'Saira Semi Condensed', sans-serif;
   font-weight: bold;
-  font-size: 65px
+  font-size: 450%
 }
-#fixPadding{
-padding-top: 30px;
-padding-bottom: 30px;
-padding-left: 20.5%;
-padding-right: 20.5%
+
+#fixPadding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20.5%;
+  padding-right: 20.5%
+}
+
+#shheader {
+  text-align: center;
+  color: #FF69B4;
+  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 450%
+}
+
+#trheader {
+  text-align: center;
+  color: #FF69B4;
+  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 450%
+}
+
+#search {
+  text-align: center;
+  font-size: 20px;
+  color: #40E0D0;
+  font-weight: bold;
+}
+
+#historytable {
+  font-size: 20px;
+  font-family: 'Baloo Bhaijaan';
+  color: #BC8F8F;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+#diz {
+  color: #FFDAB9;
+  text-align: center;
+  font-size: 16px
+}
+
+.modal-body {
+  text-align: center;
+}
+
+#spendingTypes {
+  font-size: 16px;
+  font-weight: normal;
+  width: 90%;
+  margin: auto;
+}
+
+#percentages {
+  text-align: center;
+}
+.container{
+  width: 100%;
+}
+#historydisplay {
+  font-size: 20px;
+  font-family: 'Baloo Bhaijaan';
+  color: #BC8F8F;
+  width: 90%;
+  margin: auto;
 }
