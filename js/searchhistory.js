@@ -59,7 +59,7 @@ $("#submitsearch").click(function() {
     var efactor = 0;
     for (i = 0; i < accountings.length; i++) {
       // console.log(accountings[i].spendingType)
-      if (accountings[i].spendingType == "Entertainment") {
+      if (accountings[i].spendingType == "樂") {
         entertainmentcost += accountings[i].ammount / 1;
         $("#ecd").text(entertainmentcost);
         if (accountings[i].type == "Income") {
@@ -67,7 +67,7 @@ $("#submitsearch").click(function() {
         } else {
          efactor-=accountings[i].ammount/1
         };
-      } else if (accountings[i].spendingType == "Dining") {
+      } else if (accountings[i].spendingType == "食") {
         diningcost += accountings[i].ammount / 1;
         $("#dcd").text(diningcost);
         if (accountings[i].type == "Income") {
@@ -75,7 +75,7 @@ $("#submitsearch").click(function() {
         } else {
          dfactor-=accountings[i].ammount/1
         };
-      } else if (accountings[i].spendingType == "Apparel") {
+      } else if (accountings[i].spendingType == "衣") {
         apparelcost += accountings[i].ammount / 1;
         $("#acd").text(apparelcost);
         if (accountings[i].type == "Income") {
@@ -83,7 +83,7 @@ $("#submitsearch").click(function() {
         } else {
          afactor-=accountings[i].ammount/1
         };
-      } else if (accountings[i].spendingType == "Residential") {
+      } else if (accountings[i].spendingType == "住") {
         residentialcost += accountings[i].ammount / 1;
         $("#rcd").text(residentialcost);
         if (accountings[i].type == "Income") {
@@ -91,7 +91,7 @@ $("#submitsearch").click(function() {
         } else {
          rfactor-=accountings[i].ammount/1
         };
-      } else if (accountings[i].spendingType == "Transportation") {
+      } else if (accountings[i].spendingType == "行") {
         transportationcost += accountings[i].ammount / 1;
         $("#tcd").text(transportationcost);
         if (accountings[i].type == "Income") {
@@ -99,7 +99,7 @@ $("#submitsearch").click(function() {
         } else {
          tfactor-=accountings[i].ammount/1
         };
-      } else if (accountings[i].spendingType == "Education") {
+      } else if (accountings[i].spendingType == "育") {
         educationcost += accountings[i].ammount / 1;
         $("#educd").text(educationcost);
         if (accountings[i].type == "Income") {
