@@ -15,17 +15,17 @@ $("#spending").click(function() {
   if ($("#date").val() != "" && $("#EvenT").val() != "" && $("#ammount").val() != "") {
     var occasion
     if ($("#dining").prop("checked")) {
-      occasion = "Dining"
+      occasion = "食"
     } else if ($("#apparel").prop("checked")) {
-      occasion = "Apparel"
+      occasion = "衣"
     } else if ($("#residential").prop("checked")) {
-      occasion = "Residential"
+      occasion = "住"
     } else if ($("#transportation").prop("checked")) {
-      occasion = "Transportation"
+      occasion = "行"
     } else if ($("#education").prop("checked")) {
-      occasion = "Education"
+      occasion = "育"
     } else if ($("#entertainment").prop("checked")) {
-      occasion = "Entertainment"
+      occasion = "樂"
     } else {
       occasion = " "
     }
@@ -35,7 +35,7 @@ $("#spending").click(function() {
       EvenT: $("#EvenT").val(),
       ammount: $("#ammount").val(),
       spendingType: occasion,
-      type: "Spending"
+      type: "支出"
     }
     $("#date").val("");
     $("#EvenT").val("");
@@ -61,27 +61,27 @@ $("#income").click(function() {
 if ($("#date").val() != "" && $("#EvenT").val() != "" && $("#ammount").val() != "") {
   var occasion;
   if ($("#dining").prop("checked")) {
-    occasion = "Dining"
+    occasion = "食"
   } else if ($("#apparel").prop("checked")) {
-    occasion = "Apparel"
+    occasion = "衣"
   } else if ($("#residential").prop("checked")) {
-    occasion = "Residential"
+    occasion = "住"
   } else if ($("#transportation").prop("checked")) {
-    occasion = "Transportation"
+    occasion = "行"
   } else if ($("#education").prop("checked")) {
-    occasion = "Education"
+    occasion = "育"
   } else if ($("#entertainment").prop("checked")) {
-    occasion = "Entertainment"
+    occasion = "樂"
   } else {
     occasion = " "
-  };
+  }
   console.log(occasion);
   var newIncome = {
     date: $("#date").val(),
     EvenT: $("#EvenT").val(),
     ammount: $("#ammount").val(),
     spendingType: occasion,
-    type: "Income"
+    type: "收入"
   };
   $("#date").val("");
   $("#EvenT").val("");
